@@ -24,7 +24,7 @@ if [ ! -e /etc/fsl/${FSL_VERS}/fsl.sh ]; then
     echo "Set FSL_VERS (current value if ${FSL_VERS} according to your FSL version, and rerun."
     exit 1
 fi
-source /etc/fsl/${FSL_VERS}/fsl.sh  # Change the 5.0 to your FSL version
+source /etc/fsl/${FSL_VERS}/fsl.sh
 
 # full verbose: report everythx happenx
 set -ex
