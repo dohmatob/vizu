@@ -27,7 +27,8 @@ fi
 source /etc/fsl/${FSL_VERS}/fsl.sh
 
 # full verbose: report everythx happenx
-set -ex
+set -e
+set -xv
 
 # get input
 input_4D_img=`remove_ext $1`
@@ -54,3 +55,4 @@ echo "Done. Output movie written to ${input_4D_img}_movie.gif"
 
 # cleanup
 rm -f ${input_4D_img}_DEADBEEF????.nii.gz
+rm -f ${input_4D_img}_DEADBEEF????.png
